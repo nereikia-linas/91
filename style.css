@@ -17,6 +17,7 @@ a {
 .main {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   width: 50%;
   height: 15vh;
 }
@@ -24,17 +25,12 @@ a {
 .columns {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  font-size: 1em;
 }
 
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: flex-start;
-  /* padding: 2vh; */
   margin-left: 4vh;
   margin-top: 4vh;
 }
@@ -42,59 +38,68 @@ a {
 .main-column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   width: 100%;
 }
 
 .article {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   background: rgb(255, 255, 255);
   width: 100%;
+  min-height: 24vh;
   margin-bottom: 4vh;
-  /* margin: 2vh; */
+  font-size: 1em;
+}
+
+.first-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 0;
 }
 
 .article-image {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-bottom: 2vh;
 }
-
-/* .is-4by3 {
-  width: 150%;
-} */
 
 .article-body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
+  min-height: 24vh;
   padding-left: 3vh;
-  margin-top: 3vh;
   margin-right: 3vh;
 }
 
 .article-title {
-  position: relative;
-  margin-bottom: 2vh;
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
 }
 
 .article-content {
-  position: relative;
-  margin-bottom: 2vh;
+  width: 100%;
+  margin-bottom: 1vh;
 }
 
 .article-info {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: flex-end;
+  align-self: flex-end;
+  align-items: flex-end;
+  width: 100%;
   margin-bottom: 3vh;
 }
 
 .side-column {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   margin-left: 4.8vh;
   width: 50%;
-  /* margin-left: 2vh; */
 }
