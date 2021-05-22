@@ -25,6 +25,8 @@ a {
 .columns {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  margin: auto;
 }
 
 .column {
