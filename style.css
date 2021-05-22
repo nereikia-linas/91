@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: rgb(60, 179, 113);
   font-family: 'Roboto', sans-serif;
@@ -11,4 +17,84 @@ a {
 .main {
   display: flex;
   flex-wrap: wrap;
+  width: 50%;
+  height: 15vh;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1em;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* padding: 2vh; */
+  margin-left: 4vh;
+  margin-top: 4vh;
+}
+
+.main-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  margin-bottom: 4vh;
+  /* margin: 2vh; */
+}
+
+.article-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* .is-4by3 {
+  width: 150%;
+} */
+
+.article-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 3vh;
+  margin-top: 3vh;
+  margin-right: 3vh;
+}
+
+.article-title {
+  position: relative;
+  margin-bottom: 2vh;
+}
+
+.article-content {
+  position: relative;
+  margin-bottom: 2vh;
+}
+
+.article-info {
+  position: relative;
+  margin-bottom: 3vh;
+}
+
+.side-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 4.8vh;
+  width: 50%;
+  /* margin-left: 2vh; */
 }
